@@ -1,0 +1,10 @@
+@import './styles/reset.css';
+@import './styles/variables.css';
+@import './styles/typography.css';
+@import './styles/layout.css';
+@import './styles/nav.css';
+@import './styles/hero.css';
+@import './styles/sections.css';
+@import './styles/animations.css';
+@import './styles/footer.css';
+@import './styles/responsive.css';

@@ -1,0 +1,100 @@
+:root {
+  /* ── Dark Theme (default) — Warm Earth ── */
+  --bg-primary: #1b1613;
+  --bg-secondary: #241e1a;
+  --bg-surface: #302923;
+  --bg-elevated: #3b332c;
+
+  --text-primary: #f4f0e8;
+  --text-secondary: #d4c9b8;
+  --text-muted: #a89a8c;
+
+  --accent: #C9A84C;
+  --accent-light: #dfc28a;
+  --accent-glow: rgba(201, 168, 76, 0.1);
+  --accent-hover: #d9b85a;
+  --accent-dim: rgba(201, 168, 76, 0.6);
+
+  /* Earth tones for depth */
+  --earth-warm: #3a2e24;
+  --earth-clay: #4a3b2e;
+  --earth-sand: #a89478;
+  --earth-terracotta: #7a5c42;
+
+  --border: rgba(196, 184, 168, 0.1);
+  --border-strong: rgba(196, 184, 168, 0.18);
+  --overlay: rgba(27, 22, 19, 0.92);
+  --card-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+
+  --nav-bg: rgba(27, 22, 19, 0.94);
+  --nav-blur: blur(24px);
+
+  /* ── Typography ── */
+  --font-display: 'Cormorant Garamond', 'Georgia', serif;
+  --font-body: 'Outfit', -apple-system, sans-serif;
+
+  --text-hero: clamp(3.5rem, 8vw, 7rem);
+  --text-h1: clamp(2.5rem, 5vw, 4.5rem);
+  --text-h2: clamp(1.75rem, 3.5vw, 3rem);
+  --text-h3: clamp(1.25rem, 2vw, 1.75rem);
+  --text-body: clamp(1rem, 1.1vw, 1.125rem);
+  --text-small: clamp(0.8rem, 0.9vw, 0.875rem);
+  --text-detail: 0.75rem;
+
+  --ls-wide: 0.15em;
+  --ls-mega: 0.25em;
+
+  /* ── Spacing ── */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 6rem;
+  --space-2xl: 10rem;
+
+  --section-padding: clamp(5rem, 10vw, 9rem);
+  --container-max: 1140px;
+  --container-wide: 1320px;
+  --container-padding: clamp(1.5rem, 4vw, 3rem);
+
+  /* ── Transitions ── */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast: 0.2s;
+  --duration-normal: 0.4s;
+  --duration-slow: 0.8s;
+
+  /* ── Noise ── */
+  --noise-opacity: 0.025;
+}
+
+/* ── Light Theme ── */
+[data-theme="light"] {
+  --bg-primary: #faf8f4;
+  --bg-secondary: #f1ece4;
+  --bg-surface: #e6dfd5;
+  --bg-elevated: #ffffff;
+
+  --text-primary: #1b1613;
+  --text-secondary: #4a3f36;
+  --text-muted: #6d6158;
+
+  --accent: #a58830;
+  --accent-light: #C9A84C;
+  --accent-glow: rgba(165, 136, 48, 0.08);
+  --accent-hover: #b8963a;
+  --accent-dim: rgba(165, 136, 48, 0.5);
+
+  --earth-warm: #f5efe6;
+  --earth-clay: #e8dfd3;
+  --earth-sand: #8a7c68;
+  --earth-terracotta: #9a7e5c;
+
+  --border: rgba(27, 22, 19, 0.07);
+  --border-strong: rgba(27, 22, 19, 0.13);
+  --overlay: rgba(250, 248, 244, 0.92);
+  --card-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+
+  --nav-bg: rgba(250, 248, 244, 0.93);
+  --noise-opacity: 0.018;
+}

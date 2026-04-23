@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="sr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reform Society — Premium Reformer Pilates Studio, Beograd</title>
+  <meta name="description" content="Reform Society je premium reformer pilates studio u Beogradu. Grupni i privatni treninzi na Vojvode Stepe 312." />
+
+  <meta property="og:title" content="Reform Society — Reformer Pilates Studio" />
+  <meta property="og:description" content="Premium reformer pilates studio u srcu Beograda." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/studio.jpg" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <script type="module" src="/src/main.ts"></script>
+</head>
+<body>
+
+  <!-- ══ NAV ══ -->
+  <nav class="nav" role="navigation">
+    <div class="nav__inner">
+      <a href="#" class="nav__wordmark">
+        <span class="nav__wordmark-r">R</span><span class="nav__wordmark-s">S</span>
+      </a>
+      <div class="nav__links">
+        <a href="#about" class="nav__link" data-i18n="nav.about">O nama</a>
+        <a href="#classes" class="nav__link" data-i18n="nav.classes">Treninzi</a>
+        <a href="#benefits" class="nav__link" data-i18n="nav.benefits">Prednosti</a>
+        <a href="#contact" class="nav__link" data-i18n="nav.contact">Kontakt</a>
+      </div>
+      <div class="nav__controls">
+        <div class="nav__lang-group">
+          <button class="nav__lang" data-lang="sr">SR</button>
+          <button class="nav__lang" data-lang="en">EN</button>
+          <button class="nav__lang" data-lang="ru">RU</button>
+        </div>
+        <div class="nav__divider"></div>
+        <button class="nav__theme-toggle" aria-label="Toggle theme"></button>
+      </div>
+      <button class="nav__hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile-menu">
+    <a href="#about" class="nav__link" data-i18n="nav.about">O nama</a>
+    <a href="#classes" class="nav__link" data-i18n="nav.classes">Treninzi</a>
+    <a href="#benefits" class="nav__link" data-i18n="nav.benefits">Prednosti</a>
+    <a href="#contact" class="nav__link" data-i18n="nav.contact">Kontakt</a>
+    <div class="nav__controls">
+      <div class="nav__lang-group">
+        <button class="nav__lang" data-lang="sr">SR</button>
+        <button class="nav__lang" data-lang="en">EN</button>
+        <button class="nav__lang" data-lang="ru">RU</button>
+      </div>
+      <div class="nav__divider"></div>
+      <button class="nav__theme-toggle" aria-label="Toggle theme"></button>
+    </div>
+  </div>
+
+  <!-- ══ HERO ══ -->
+  <section class="hero" id="hero">
+    <div class="hero__content">
+      <div class="hero__title">
+        <span class="text-hero hero__title-reform" data-i18n="hero.title.reform">Reform</span>
+        <span class="hero__title-society" data-i18n="hero.title.society">Society</span>
+      </div>
+      <p class="hero__tagline" data-i18n="hero.tagline">Pilates redefinisan</p>
+      <a href="#contact" class="btn-primary" data-i18n="hero.cta">Zakažite čas</a>
+      <div class="hero__reformer-wrapper">
+        <span class="hero__drag-hint" data-i18n="hero.drag">Prevucite kolica</span>
+      </div>
+      <div class="hero__scroll-indicator">
+        <div class="hero__scroll-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ ABOUT ══ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <div class="section-header">
+            <span class="detail-label reveal" data-i18n="about.label">O nama</span>
+            <h2 class="clip-reveal" data-i18n="about.title">Umetnost pokreta</h2>
+            <div class="gold-line"></div>
+          </div>
+          <p class="body-text reveal" data-i18n="about.text1">
+            Reform Society je premium reformer pilates studio u srcu Beograda. Naš prostor je dizajniran da inspiriše, od pažljivo odabrane opreme do atmosfere koja podstiče fokus i unutrašnji mir.
+          </p>
+          <br/>
+          <p class="body-text reveal" data-i18n="about.text2">
+            Verujemo da je pilates više od vežbanja. To je praksa koja povezuje telo i um, gradi snagu iz temelja i transformiše način na koji se krećete kroz život.
+          </p>
+        </div>
+        <div class="about__image-wrapper reveal parallax-img" style="position:relative;">
+          <img src="/studio.jpg" alt="Reform Society Studio Interior" loading="lazy" />
+          <div class="about__arch"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CLASSES ══ -->
+  <section class="classes" id="classes">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <span class="detail-label reveal" data-i18n="classes.label">Treninzi</span>
+        <h2 class="clip-reveal" data-i18n="classes.title">Pronađite svoj ritam</h2>
+        <div class="gold-line gold-line--center"></div>
+      </div>
+      <div class="grid-3">
+        <div class="class-card reveal-scale">
+          <div class="class-card__icon">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 data-i18n="classes.group.title">Grupni reformer</h3>
+          <p data-i18n="classes.group.desc">Dinamičan trening u maloj grupi do 8 osoba. Stručno vođeni časovi koji kombinuju snagu, fleksibilnost i kontrolu pokreta.</p>
+        </div>
+        <div class="class-card reveal-scale">
+          <div class="class-card__icon">
+            <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h3 data-i18n="classes.private.title">Privatni čas</h3>
+          <p data-i18n="classes.private.desc">Individualna pažnja i program prilagođen vašim ciljevima. Idealno za početnike ili one koji žele dublje razumevanje pokreta.</p>
+        </div>
+        <div class="class-card reveal-scale">
+          <div class="class-card__icon">
+            <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3 data-i18n="classes.intro.title">Uvodni čas</h3>
+          <p data-i18n="classes.intro.desc">Vaš prvi korak u svet reformer pilatesa. Upoznajte opremu, osnovne principe i otkrijte šta pilates može da uradi za vas.</p>
+        </div>
+      </div>
+      <div class="section-cta reveal">
+        <a href="#contact" class="btn-secondary" data-i18n="classes.cta">Započnite danas</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ BENEFITS ══ -->
+  <section class="benefits" id="benefits">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <span class="detail-label reveal" data-i18n="benefits.label">Zašto reformer</span>
+        <h2 class="clip-reveal" data-i18n="benefits.title">Prednosti reformer pilatesa</h2>
+        <div class="gold-line gold-line--center"></div>
+      </div>
+      <div class="benefits__grid">
+        <div class="benefit-card reveal-scale">
+          <div class="benefit-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+          </div>
+          <h3 data-i18n="benefits.core.title">Snaga cele muskulature</h3>
+          <p data-i18n="benefits.core.desc">Reformer aktivira duboke mišiće koji se ne koriste u svakodnevnom životu. Trening na njemu jača telo iznutra, poboljšava držanje i stabilnost.</p>
+        </div>
+        <div class="benefit-card reveal-scale">
+          <div class="benefit-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12c0-4.4 3.6-8 8-8s8 3.6 8 8"/><path d="M12 4v4"/><path d="M4 12h4"/><path d="M16 12h4"/><circle cx="12" cy="12" r="2"/></svg>
+          </div>
+          <h3 data-i18n="benefits.flex.title">Fleksibilnost i pokretljivost</h3>
+          <p data-i18n="benefits.flex.desc">Kontrolisani pokreti na reformeru povećavaju obim pokreta u zglobovima bez rizika od povreda. Telo postaje gipkije sa svakim treningom.</p>
+        </div>
+        <div class="benefit-card reveal-scale">
+          <div class="benefit-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22c5.5 0 10-4.5 10-10S17.5 2 12 2 2 6.5 2 12"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3 data-i18n="benefits.posture.title">Ispravno držanje tela</h3>
+          <p data-i18n="benefits.posture.desc">Reformer pilates direktno utiče na korekciju loše posture. Jača mišiće leđa i trupa, što pomaže kod sedećeg načina života.</p>
+        </div>
+        <div class="benefit-card reveal-scale">
+          <div class="benefit-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19.69 14a6.9 6.9 0 0 0 .31-2V5l-8-3-8 3v7c0 5.55 3.84 10.74 8 12 1.56-.47 3-1.34 4.22-2.46"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h3 data-i18n="benefits.rehab.title">Rehabilitacija i prevencija</h3>
+          <p data-i18n="benefits.rehab.desc">Nizak uticaj na zglobove čini reformer idealnim za oporavak posle povreda. Fizioterapeuti širom sveta ga preporučuju kao deo terapije.</p>
+        </div>
+        <div class="benefit-card reveal-scale">
+          <div class="benefit-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a4.5 4.5 0 0 0-4.5 4.5C7.5 10 12 13 12 13s4.5-3 4.5-6.5A4.5 4.5 0 0 0 12 2z"/><path d="M12 13v9"/><path d="M9 18h6"/></svg>
+          </div>
+          <h3 data-i18n="benefits.stress.title">Mentalno zdravlje</h3>
+          <p data-i18n="benefits.stress.desc">Fokus na disanje i kontrolu pokreta smanjuje nivo stresa i anksioznosti. Svaki trening je prilika da se povežete sa sobom.</p>
+        </div>
+        <div class="benefit-card reveal-scale">
+          <div class="benefit-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6.5 6.5l11 11M6.5 17.5l11-11"/><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          <h3 data-i18n="benefits.body.title">Oblikovanje tela</h3>
+          <p data-i18n="benefits.body.desc">Reformer trening tonira mišiće bez dodavanja obima. Rezultat je dugo, vitko i snažno telo koje se oseća podjednako dobro koliko i izgleda.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ APP ══ -->
+  <section class="app-section" id="app">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <span class="detail-label reveal" data-i18n="app.label">Aplikacija</span>
+        <h2 class="clip-reveal" data-i18n="app.title">Uzmite Reform Society sa sobom</h2>
+        <div class="gold-line gold-line--center"></div>
+      </div>
+      <p class="body-text reveal section-header--center" style="max-width:500px;margin:0 auto var(--space-lg);" data-i18n="app.desc">
+        Rezervišite časove, pratite napredak i budite u toku sa svim novostima. Sve na jednom mestu.
+      </p>
+      <div class="app-section__mockup reveal-scale">
+        <span class="app-section__mockup-brand">RS</span>
+      </div>
+      <p class="detail-label reveal section-header--center" style="margin-bottom:var(--space-md);" data-i18n="app.coming">Uskoro dostupno</p>
+      <div class="app-buttons reveal">
+        <a href="#" class="app-btn">
+          <div class="app-btn__icon">
+            <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          </div>
+          <div class="app-btn__text">
+            <span class="app-btn__text-small" data-i18n="app.store.sub">Preuzmi na</span>
+            <span class="app-btn__text-main" data-i18n="app.store">App Store</span>
+          </div>
+        </a>
+        <a href="#" class="app-btn">
+          <div class="app-btn__icon">
+            <svg viewBox="0 0 24 24"><path d="M3 20.5V3.5a1 1 0 0 1 1.5-.87l16 8.5a1 1 0 0 1 0 1.74l-16 8.5A1 1 0 0 1 3 20.5z"/></svg>
+          </div>
+          <div class="app-btn__text">
+            <span class="app-btn__text-small" data-i18n="app.play.sub">Dostupno na</span>
+            <span class="app-btn__text-main" data-i18n="app.play">Google Play</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ══ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <span class="detail-label reveal" data-i18n="contact.label">Kontakt</span>
+        <h2 class="clip-reveal" data-i18n="contact.title">Javite nam se</h2>
+        <div class="gold-line gold-line--center"></div>
+      </div>
+      <div class="contact__grid">
+        <div class="contact__info stagger-children">
+          <div class="contact__item">
+            <div class="contact__item-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <span class="detail-label" data-i18n="contact.email.label">Email</span>
+              <p><a href="mailto:office@reformsociety.rs" class="text-accent" data-i18n="contact.email">office@reformsociety.rs</a></p>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__item-icon">
+              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <span class="detail-label" data-i18n="contact.address.label">Adresa</span>
+              <p data-i18n="contact.address">Vojvode Stepe 312, Beograd</p>
+              <a href="https://maps.google.com/?q=Vojvode+Stepe+312+Belgrade" target="_blank" rel="noopener" class="text-accent text-small-link" data-i18n="contact.map">Prikaži na mapi</a>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__item-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <span class="detail-label" data-i18n="contact.hours.label">Radno vreme</span>
+              <p data-i18n="contact.hours.weekday">Ponedeljak - Petak: 08:00 - 13:00 i 17:00 - 22:00</p>
+              <p data-i18n="contact.hours.weekend">Subota i Nedelja: 09:00 - 18:00</p>
+            </div>
+          </div>
+          <div class="contact__cta">
+            <a href="mailto:office@reformsociety.rs" class="btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span data-i18n="contact.cta">Pošaljite email</span>
+            </a>
+          </div>
+          <div>
+            <span class="detail-label" data-i18n="contact.social">Pratite nas</span>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Facebook" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="TikTok" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="contact__map reveal">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2832.5!2d20.48!3d44.78!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sVojvode+Stepe+312%2C+Belgrade!5e0!3m2!1ssr!2srs!4v1"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Reform Society Location"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <a href="#" class="footer__wordmark">
+          <span class="footer__wordmark-text">Reform Society</span>
+        </a>
+        <p class="footer__copyright">
+          &copy; 2026 Reform Society. <span data-i18n="footer.rights">Sva prava zadržana.</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

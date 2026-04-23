@@ -1,0 +1,444 @@
+/* ── About Section ── */
+.about {
+  background: var(--bg-primary);
+}
+
+.about__image-wrapper {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+
+.about__image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about__image-wrapper::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 1px solid var(--border-strong);
+  border-radius: 6px;
+  pointer-events: none;
+}
+
+.about__arch {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 100px;
+  height: 180px;
+  border: 1px solid var(--accent);
+  border-radius: 50px 50px 0 0;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+/* ── Classes Section ── */
+.classes {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.class-card {
+  background: var(--bg-surface);
+  border-radius: 6px;
+  padding: var(--space-md) var(--space-md) calc(var(--space-md) + 4px);
+  border-top: 2px solid var(--accent);
+  transition: transform var(--duration-normal) var(--ease-out),
+              box-shadow var(--duration-normal) var(--ease-out);
+  position: relative;
+  overflow: hidden;
+}
+
+.class-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--card-shadow);
+}
+
+.class-card__icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: var(--space-sm);
+  color: var(--accent);
+}
+
+.class-card__icon svg {
+  width: 100%;
+  height: 100%;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.5;
+}
+
+.class-card h3 {
+  margin-bottom: var(--space-xs);
+  font-size: var(--text-h3);
+  color: var(--text-primary);
+}
+
+.class-card p {
+  color: var(--text-secondary);
+  font-weight: 400;
+  line-height: 1.75;
+  font-size: var(--text-small);
+}
+
+.class-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--accent), transparent);
+  opacity: 0;
+  transition: opacity var(--duration-normal);
+}
+
+.class-card:hover::after {
+  opacity: 0.4;
+}
+
+/* ── Benefits Section ── */
+.benefits {
+  background: var(--bg-primary);
+}
+
+.benefits__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+.benefit-card {
+  padding: var(--space-md) var(--space-sm);
+  text-align: center;
+  position: relative;
+}
+
+.benefit-card__icon {
+  width: 44px;
+  height: 44px;
+  margin: 0 auto var(--space-sm);
+  color: var(--accent);
+  opacity: 0.85;
+}
+
+.benefit-card__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.benefit-card h3 {
+  font-size: var(--text-h3);
+  margin-bottom: var(--space-xs);
+  color: var(--text-primary);
+}
+
+.benefit-card p {
+  color: var(--text-secondary);
+  font-weight: 400;
+  line-height: 1.75;
+  font-size: var(--text-small);
+}
+
+/* Subtle divider between benefit cards on desktop */
+.benefit-card + .benefit-card {
+  border-left: 1px solid var(--border);
+}
+
+/* Remove left border on first card of each row */
+.benefit-card:nth-child(4) {
+  border-left: none;
+}
+
+.text-small-link {
+  font-size: var(--text-small);
+  display: inline-block;
+  margin-top: 4px;
+}
+
+/* ── App Download Section ── */
+.app-section {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+
+.app-section__mockup {
+  width: 260px;
+  height: 480px;
+  margin: 0 auto var(--space-lg);
+  background: var(--bg-surface);
+  border-radius: 36px;
+  border: 2px solid var(--border-strong);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.app-section__mockup-brand {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  opacity: 0.2;
+  user-select: none;
+}
+
+.app-section__mockup::before {
+  content: '';
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 22px;
+  background: var(--bg-primary);
+  border-radius: 11px;
+}
+
+.app-buttons {
+  display: flex;
+  gap: var(--space-sm);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.app-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 24px;
+  background: var(--bg-elevated);
+  border: 1.5px solid var(--accent-dim);
+  border-radius: 10px;
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.app-btn:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: var(--card-shadow);
+}
+
+.app-btn:hover .app-btn__icon,
+.app-btn:hover .app-btn__text-main {
+  color: #151210;
+}
+
+.app-btn:hover .app-btn__text-small {
+  color: rgba(21, 18, 16, 0.7);
+}
+
+[data-theme="light"] .app-btn:hover .app-btn__icon,
+[data-theme="light"] .app-btn:hover .app-btn__text-main {
+  color: #faf8f4;
+}
+
+[data-theme="light"] .app-btn:hover .app-btn__text-small {
+  color: rgba(250, 248, 244, 0.7);
+}
+
+.app-btn__icon {
+  width: 24px;
+  height: 24px;
+  color: var(--text-primary);
+}
+
+.app-btn__icon svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+.app-btn__text {
+  text-align: left;
+}
+
+.app-btn__text-small {
+  font-size: var(--text-detail);
+  color: var(--text-muted);
+  display: block;
+  line-height: 1.3;
+}
+
+.app-btn__text-main {
+  font-size: var(--text-small);
+  font-weight: 500;
+  display: block;
+  color: var(--text-primary);
+}
+
+/* ── Contact Section ── */
+.contact {
+  background: var(--bg-primary);
+}
+
+.contact__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.contact__item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+}
+
+.contact__item-icon {
+  width: 22px;
+  height: 22px;
+  color: var(--accent);
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.contact__item-icon svg {
+  width: 100%;
+  height: 100%;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.5;
+}
+
+.contact__item p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.contact__cta {
+  margin-top: var(--space-sm);
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 32px;
+  background: var(--accent);
+  color: #151210;
+  font-family: var(--font-body);
+  font-size: var(--text-detail);
+  font-weight: 600;
+  letter-spacing: var(--ls-mega);
+  text-transform: uppercase;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+[data-theme="light"] .btn-primary {
+  color: #faf8f5;
+}
+
+.btn-primary:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px var(--accent-glow);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 32px;
+  background: transparent;
+  color: var(--accent);
+  font-family: var(--font-body);
+  font-size: var(--text-detail);
+  font-weight: 600;
+  letter-spacing: var(--ls-mega);
+  text-transform: uppercase;
+  border: 1.5px solid var(--accent);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.btn-secondary:hover {
+  background: var(--accent);
+  color: #151210;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px var(--accent-glow);
+}
+
+[data-theme="light"] .btn-secondary:hover {
+  color: #faf8f4;
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+  margin-top: var(--space-sm);
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-strong);
+  border-radius: 50%;
+  color: var(--text-muted);
+  transition: all var(--duration-fast);
+}
+
+.social-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-glow);
+}
+
+.social-link svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+/* Map */
+.contact__map {
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--border-strong);
+  height: 100%;
+  min-height: 380px;
+}
+
+.contact__map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  filter: grayscale(0.7) contrast(1.05) brightness(0.95);
+  transition: filter var(--duration-normal);
+}
+
+[data-theme="light"] .contact__map iframe {
+  filter: grayscale(0.5) contrast(1) brightness(1);
+}
+
+.contact__map:hover iframe {
+  filter: grayscale(0.2) contrast(1);
+}
+

@@ -1,0 +1,226 @@
+/* ── Outer fixed bar ── */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: background var(--duration-normal) var(--ease-out),
+              box-shadow var(--duration-normal) var(--ease-out);
+}
+
+.nav--scrolled {
+  background: var(--nav-bg);
+  backdrop-filter: var(--nav-blur);
+  -webkit-backdrop-filter: var(--nav-blur);
+  box-shadow: 0 1px 0 var(--border);
+}
+
+/* ── Inner container — matches page content width ── */
+.nav__inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0.875rem var(--container-padding);
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+/* ── Wordmark ── */
+.nav__wordmark {
+  flex-shrink: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 1px;
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  line-height: 1;
+  transition: opacity var(--duration-fast);
+}
+
+.nav__wordmark:hover {
+  opacity: 0.8;
+}
+
+.nav__wordmark-r {
+  color: var(--accent);
+}
+
+.nav__wordmark-s {
+  color: var(--earth-sand);
+}
+
+/* ── Center links — grow to fill space, center text ── */
+.nav__links {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+}
+
+.nav__link {
+  font-family: var(--font-body);
+  font-size: var(--text-detail);
+  font-weight: 500;
+  letter-spacing: var(--ls-mega);
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  transition: color var(--duration-fast);
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav__link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--accent);
+  transition: width var(--duration-normal) var(--ease-out);
+}
+
+.nav__link:hover {
+  color: var(--text-primary);
+}
+
+.nav__link:hover::after {
+  width: 100%;
+}
+
+/* ── Right controls ── */
+.nav__controls {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.nav__lang-group {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  border-radius: 6px;
+  background: var(--accent-glow);
+}
+
+.nav__lang {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding: 5px 8px;
+  border-radius: 4px;
+  transition: color var(--duration-fast), background var(--duration-fast);
+  line-height: 1;
+}
+
+.nav__lang:hover {
+  color: var(--text-primary);
+}
+
+.nav__lang--active {
+  color: var(--accent);
+  background: var(--bg-surface);
+}
+
+.nav__divider {
+  width: 1px;
+  height: 20px;
+  background: var(--border-strong);
+  margin: 0 8px;
+}
+
+.nav__theme-toggle {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: var(--text-muted);
+  transition: color var(--duration-fast), background var(--duration-fast);
+}
+
+.nav__theme-toggle:hover {
+  color: var(--accent);
+  background: var(--accent-glow);
+}
+
+.nav__theme-toggle svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* ── Mobile hamburger ── */
+.nav__hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  width: 24px;
+  padding: 2px 0;
+  flex-shrink: 0;
+}
+
+.nav__hamburger span {
+  display: block;
+  width: 100%;
+  height: 1.5px;
+  background: var(--text-primary);
+  transition: transform var(--duration-normal) var(--ease-out),
+              opacity var(--duration-fast);
+  transform-origin: center;
+}
+
+.nav__hamburger--open span:nth-child(1) {
+  transform: rotate(45deg) translate(4px, 5px);
+}
+
+.nav__hamburger--open span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav__hamburger--open span:nth-child(3) {
+  transform: rotate(-45deg) translate(4px, -5px);
+}
+
+/* ── Mobile overlay ── */
+.nav__mobile-menu {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: var(--bg-primary);
+  z-index: 999;
+  padding: 120px var(--container-padding) var(--space-lg);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.nav__mobile-menu--open {
+  display: flex;
+}
+
+.nav__mobile-menu .nav__link {
+  font-size: var(--text-h2);
+  font-family: var(--font-display);
+  font-weight: 300;
+  letter-spacing: var(--ls-wide);
+  color: var(--text-primary);
+}
+
+.nav__mobile-menu .nav__controls {
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
