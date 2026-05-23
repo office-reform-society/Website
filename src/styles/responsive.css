@@ -220,8 +220,8 @@
     padding-top: 70px;
   }
 
-  .nav__wordmark {
-    font-size: 1.25rem;
+  .nav__wordmark-logo {
+    height: 32px;
   }
 
   .class-card h3 {
