@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && npm run postbuild",
+    "postbuild": "mkdir -p dist/terms dist/privacy && cp dist/terms.html dist/terms/index.html && cp dist/privacy.html dist/privacy/index.html",
     "preview": "vite preview"
   },
   "devDependencies": {
