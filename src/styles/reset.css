@@ -53,3 +53,18 @@ h1, h2, h3, h4, h5, h6 {
 p {
   overflow-wrap: break-word;
 }
+
+/* Screen-reader-only utility. Keeps content in the DOM (indexed by
+   search engines, announced by assistive tech) while removing it from
+   the visual layout. Used for the SEO <h1> behind the hero wordmark. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

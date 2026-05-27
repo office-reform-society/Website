@@ -3,16 +3,107 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reform Society — Premium Reformer Pilates Studio, Beograd</title>
-  <meta name="description" content="Reform Society je premium reformer pilates studio u Beogradu. Grupni i privatni treninzi na Vojvode Stepe 312." />
 
-  <meta property="og:title" content="Reform Society — Reformer Pilates Studio" />
-  <meta property="og:description" content="Premium reformer pilates studio u srcu Beograda." />
+  <!-- Primary SEO. Title + description front-load the highest-intent
+       local queries: "reformer pilates Beograd / Belgrade", "reformer
+       Beograd", "pilates Voždovac". Keep the brand at the end so the
+       keyword phrase wins the pixel-limited SERP title. -->
+  <title>Reformer Pilates Beograd — Reform Society Studio | Vojvode Stepe, Voždovac</title>
+  <meta name="description" content="Reform Society je premium reformer pilates studio u Beogradu (Voždovac, Vojvode Stepe 312). Grupni i privatni reformer pilates treninzi — reformer Beograd / reformer Belgrade. Zakažite uvodni čas." />
+  <meta name="keywords" content="reformer pilates, reformer pilates Beograd, reformer Beograd, reformer Belgrade, reformer pilates Belgrade, pilates Beograd, pilates Belgrade, pilates studio Beograd, reformer studio, grupni reformer, privatni pilates, pilates Voždovac, pilates Vojvode Stepe, reformer pilates Srbija, Reform Society" />
+  <meta name="author" content="Reform Society" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://reformsociety.rs/" />
+
+  <!-- Locale: site is Serbian-first with EN/RU available via in-page
+       toggle (single URL SPA, so locale alternates point at the same
+       canonical rather than separate hreflang URLs). -->
+  <meta name="language" content="Serbian" />
+  <meta name="geo.region" content="RS-00" />
+  <meta name="geo.placename" content="Beograd" />
+  <meta name="geo.position" content="44.7689;20.4769" />
+  <meta name="ICBM" content="44.7689, 20.4769" />
+  <meta name="theme-color" content="#2A1810" />
+
+  <!-- Open Graph (absolute URLs required for social unfurls) -->
+  <meta property="og:site_name" content="Reform Society" />
+  <meta property="og:title" content="Reformer Pilates Beograd — Reform Society Studio" />
+  <meta property="og:description" content="Premium reformer pilates studio u srcu Beograda. Grupni i privatni reformer treninzi na Vojvode Stepe 312, Voždovac." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="/studio.jpg" />
+  <meta property="og:url" content="https://reformsociety.rs/" />
+  <meta property="og:image" content="https://reformsociety.rs/studio.jpg" />
+  <meta property="og:image:alt" content="Reform Society reformer pilates studio, Beograd" />
+  <meta property="og:locale" content="sr_RS" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ru_RU" />
+
+  <!-- Twitter / X card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Reformer Pilates Beograd — Reform Society Studio" />
+  <meta name="twitter:description" content="Premium reformer pilates studio u Beogradu. Grupni i privatni treninzi, Vojvode Stepe 312." />
+  <meta name="twitter:image" content="https://reformsociety.rs/studio.jpg" />
 
   <link rel="icon" type="image/png" href="/favicon.png" />
   <link rel="apple-touch-icon" href="/favicon.png" />
+
+  <!-- Local-business structured data — the biggest lever for ranking on
+       "reformer pilates Beograd" and showing up in Google Maps / the
+       local pack. Type SportsActivityLocation (a HealthClub-adjacent
+       LocalBusiness subtype) with NAP, geo, hours, and price range. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["SportsActivityLocation", "HealthClub"],
+    "name": "Reform Society",
+    "description": "Premium reformer pilates studio u Beogradu — grupni i privatni reformer pilates treninzi.",
+    "url": "https://reformsociety.rs/",
+    "image": "https://reformsociety.rs/studio.jpg",
+    "logo": "https://reformsociety.rs/logo.png",
+    "email": "office@reformsociety.rs",
+    "currenciesAccepted": "RSD",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Vojvode Stepe 312",
+      "addressLocality": "Beograd",
+      "addressRegion": "Voždovac",
+      "postalCode": "11000",
+      "addressCountry": "RS"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 44.7689,
+      "longitude": 20.4769
+    },
+    "hasMap": "https://maps.google.com/?q=Vojvode+Stepe+312+Belgrade",
+    "areaServed": { "@type": "City", "name": "Beograd" },
+    "knowsLanguage": ["sr", "en", "ru"],
+    "sport": "Pilates",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00", "closes": "13:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "17:00", "closes": "22:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday", "Sunday"],
+        "opens": "09:00", "closes": "18:00"
+      }
+    ],
+    "makesOffer": [
+      { "@type": "Offer", "name": "Grupni reformer pilates", "category": "Group class" },
+      { "@type": "Offer", "name": "Privatni reformer pilates", "category": "Private session" },
+      { "@type": "Offer", "name": "Uvodni čas", "category": "Intro class" }
+    ]
+  }
+  </script>
+
   <script type="module" src="/src/main.ts"></script>
 </head>
 <body>
@@ -21,7 +112,7 @@
   <nav class="nav" role="navigation">
     <div class="nav__inner">
       <a href="#" class="nav__wordmark" aria-label="Reform Society">
-        <img src="/logo.png" alt="Reform Society" class="nav__wordmark-logo" />
+        <img src="/logo.png" alt="Reform Society — reformer pilates studio Beograd" class="nav__wordmark-logo" />
       </a>
       <div class="nav__links">
         <a href="#about" class="nav__link" data-i18n="nav.about">O nama</a>
@@ -64,7 +155,12 @@
   <!-- ══ HERO ══ -->
   <section class="hero" id="hero">
     <div class="hero__content">
-      <div class="hero__title">
+      <!-- Real, keyword-bearing H1 for crawlers. Visually hidden because
+           the brand wordmark below is the design's hero treatment; this
+           gives Google a proper <h1> with the target phrase that the
+           stylised "Reform / Society" spans lack. -->
+      <h1 class="visually-hidden">Reformer Pilates Beograd — Reform Society studio (Vojvode Stepe, Voždovac)</h1>
+      <div class="hero__title" aria-hidden="true">
         <span class="text-hero hero__title-reform" data-i18n="hero.title.reform">Reform</span>
         <span class="hero__title-society" data-i18n="hero.title.society">Society</span>
       </div>
@@ -98,7 +194,7 @@
           </p>
         </div>
         <div class="about__image-wrapper reveal parallax-img" style="position:relative;">
-          <img src="/studio.jpg" alt="Reform Society Studio Interior" loading="lazy" />
+          <img src="/studio.jpg" alt="Reform Society reformer pilates studio enterijer — Vojvode Stepe 312, Beograd" loading="lazy" />
           <div class="about__arch"></div>
         </div>
       </div>
